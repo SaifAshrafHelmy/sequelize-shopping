@@ -1,7 +1,7 @@
 import { DataTypes, Model } from 'sequelize';
 import { sequelize } from './db.js';
 
-const Customer = sequelize.define('User', {
+const Customer = sequelize.define('Customer', {
   // Model Attributes
   id: {
     type: DataTypes.INTEGER,
@@ -106,4 +106,5 @@ const Payment = sequelize.define(
 (async () => {
   await sequelize.sync();
   console.log('All models were synchronized successfully.');
+
 })();
